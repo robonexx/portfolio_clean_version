@@ -37,18 +37,19 @@
         font-size: 3rem;
         font-weight: 100;
         font-family: 'Nunito', sans-serif;
-        
-    }
-    h1 {
-        font-size: 5rem;
-        font-family: 'Playfair Display', serif;
-        color: #FCFCFB;
-        text-transform: uppercase;
+
         b {
-            font-size: 8rem;
-            font-weight: 600;
+            font-size: 4rem;
+        }
+
+        small {
+            unicode-bidi:bidi-override;
+            direction:rtl;
+            font-size: 4rem;
+            font-weight: 400;
         }
         
     }
+    
 
 }
