@@ -1,11 +1,6 @@
 import React from 'react'
-import {ThemeProvider} from "styled-components";
-import  {useDarkMode} from './components/Toggle/UseDarkMode'
-import { GlobalStyles } from './components/Themes/GlobalStyle'
-import { lightTheme, darkTheme } from "./components/Themes/Themes"
-import ThemeToggle from "./components/Toggle/Toggler"
-import Header from './components/Header'
-import Home from './pages/Home/Home'
+import Nav from './components/Nav/Nav'
+import Home from './pages/Home/HomeTest'
 import About from './pages/About/About'
 import Projects from './pages/Projects/Projects'
 import Dancer from './pages/Dancer/Dancer'
@@ -15,18 +10,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
 
-  const [theme, themeToggler, mountedComponent] = useDarkMode();
-
-  const themeMode = theme === 'light' ? lightTheme : darkTheme;
-
-
-  if(!mountedComponent) return <div/>
   return (
     <Router>
-      <ThemeProvider theme={themeMode}>
-          <ThemeToggle theme={theme} toggleTheme={themeToggler} />
-            <GlobalStyles/>
-                <Header />
+      <Nav/>
                   <Switch>
                       <Route exact path="/" component={Home}/>
                       <Route path="/about" component={About}/>
@@ -35,7 +21,6 @@ function App() {
                       <Route path="/dancer" component={Dancer}/>
                       <Route path="/contact" component={Contact}/>
                   </Switch>
-      </ThemeProvider> 
     </Router>
   );
 }
