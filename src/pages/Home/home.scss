@@ -1,0 +1,54 @@
+.home-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #F3BE58;
+
+}
+
+.logo-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    top: 15vh;
+    z-index: 50;
+
+    h1 {
+        position: absolute;
+        left: 20%;
+        bottom: -25%;
+        font-size: 20rem;
+        font-family: 'Playfair Display', serif;
+        color: #FCFCFB;
+        text-transform: uppercase;
+    }
+}
+
+.home-section-top {
+    position: relative;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 100;
+        font-family: 'Nunito', sans-serif;
+        
+    }
+    h1 {
+        font-size: 5rem;
+        font-family: 'Playfair Display', serif;
+        color: #FCFCFB;
+        text-transform: uppercase;
+        b {
+            font-size: 8rem;
+            font-weight: 600;
+        }
+        
+    }
+
+}

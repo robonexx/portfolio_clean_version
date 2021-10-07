@@ -48,31 +48,31 @@ padding: 0.25rem;
     
     a {
         font-size: 1.8rem;
-        font-family: 'Darker Grotesque', sans-serif;
+        font-family: 'Nunito', sans-serif;
         text-decoration: none;
         line-height: 1;
-        color: #fff;
+        color: #FCFCFB;
         
         small {
             font-size: .7rem;
             display: block;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-weight: 200;
+            font-weight: 100;
             text-align: right;
-            color: #aaa;
+            color: rgb(0, 0, 0);
         }
     }
 
         &:hover {
             a {
         transform: scale(1.1);
-        color: tomato;
+        color: #000;
             }
             small {
-                color: rgba(180,180,180);
+                color: #FCFCFB;
             }
             &::after {
-                border-left: solid 15px orange;
+                border-left: solid 15px #eea00f;
             }
         }
 

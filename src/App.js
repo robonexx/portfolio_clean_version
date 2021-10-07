@@ -1,6 +1,7 @@
 import React from 'react'
+import './main.scss'
 import Nav from './components/Nav/Nav'
-import Home from './pages/Home/HomeTest'
+import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Projects from './pages/Projects/Projects'
 import Dancer from './pages/Dancer/Dancer'
